@@ -3,7 +3,10 @@
 
 #include <QMainWindow>
 #include "./api/http/webimage.h"
+#include "./api/http/synchttpobject.h"
+#include "./api/http/htmlinfo.h"
 #include <QThread>
+#include <QDir>
 
 
 QT_BEGIN_NAMESPACE
@@ -20,6 +23,8 @@ public:
 
 private slots:
     void on_btnDownload_clicked();
+
+    void on_btnDownloadHeiguang_clicked();
 
 private:
     Ui::MainWindow* ui;
